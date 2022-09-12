@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import Alerta from '../components/popup-alert';
+
 import './formlogin.css';
 
 const Form = () => {
@@ -11,7 +13,7 @@ const Form = () => {
 
   return(
    <>
-      <p>Login</p>
+      <h1>Abra sua conta!</h1>
       <form onSubmit={cadastrarUsuario} >
         <div className='user-box'>
           <label htmlFor='name'>Usuário</label>
@@ -24,7 +26,7 @@ const Form = () => {
         </div>
       </form>
       <div>
-        <button className='buttonClass' onClick={cadastrarUsuario}>Cadastrar</button>
+        <Alerta />
       </div>
     
    </>

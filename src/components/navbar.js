@@ -16,10 +16,6 @@ function Navbar() {
             Home
           </Link>
 
-          <Link to="/empresa" className='Link'>
-            Empresa
-          </Link>
-
           <Link to="/contato" className='Link'>
             Contato
           </Link>
